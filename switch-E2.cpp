@@ -12,21 +12,25 @@ int main(){
     switch(note){
 
         case 1:
-        if (note >= 0 && note <= 20){
+        if (note >= 0 && note <= 69){
             rating = "F";
-        } else if (note >= 21 && note <= 40){
+        } else if (note >= 70 && note <= 79){
             rating = "D";
-        } else if (note >= 41 && note <= 60){
+        } else if (note >= 80 && note <= 84){
             rating = "C";
-        } else if (note >= 61 && note <= 80){
+        } else if (note >= 85 && note <= 89){
             rating = "B";
-        } else if (note >= 81 && note <= 100){
+        } else if (note >= 90){
             rating = "A";
-        } break;
-
-        cout << "Tu calificacion en base a los datos que ingresaste es: " << rating << endl;
-
+        }else if (note = 69){
+            rating = "E";
+        } default:
+            rating = "El numero que seleccionaste no es valido para entregarte tu calificacion";
+            return 1;
+          break;
     }
+
+    cout << "Tu calificacion en base al numero que ingresaste es: " << rating << endl;
 
     return 0;
 }
