@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int numbers[5];
+    int numbers[5]; 
     int suma = 1;
 
     for (int i = 0; i < 5; i++){
@@ -19,3 +19,4 @@ int main(){
 
     return 0;
 }
+// no se que esta maaaaaal, no valgo verga
